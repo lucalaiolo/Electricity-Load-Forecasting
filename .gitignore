@@ -1,0 +1,12 @@
+# data is downloaded by scripts/01_prepare_data.py
+data/raw/
+data/processed/
+*.part
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+build/

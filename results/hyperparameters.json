@@ -1,0 +1,235 @@
+{
+  "SARIMA": {
+    "chosen": {
+      "orders": {
+        "1": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            7
+          ]
+        ],
+        "2": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            7
+          ]
+        ]
+      }
+    },
+    "grid": [
+      {
+        "order": [
+          0,
+          1,
+          1
+        ],
+        "seasonal_order": [
+          0,
+          1,
+          1,
+          7
+        ],
+        "val_mae_1_step": 1048.3540311503145,
+        "val_mae_2_step": 1509.3920058562142,
+        "val_mae": 1317.292849728756,
+        "aic_sum": 460153.62730923615
+      },
+      {
+        "order": [
+          1,
+          1,
+          1
+        ],
+        "seasonal_order": [
+          0,
+          1,
+          1,
+          7
+        ],
+        "val_mae_1_step": 1051.020524664435,
+        "val_mae_2_step": 1475.3503447493636,
+        "val_mae": 1298.5462530473098,
+        "aic_sum": 459843.92405929446
+      },
+      {
+        "order": [
+          1,
+          0,
+          1
+        ],
+        "seasonal_order": [
+          0,
+          1,
+          1,
+          7
+        ],
+        "val_mae_1_step": 1166.613901575243,
+        "val_mae_2_step": 1373.470284659379,
+        "val_mae": 1287.2801250409893,
+        "aic_sum": 462649.73762934445
+      },
+      {
+        "order": [
+          1,
+          0,
+          1
+        ],
+        "seasonal_order": [
+          1,
+          1,
+          1,
+          7
+        ],
+        "val_mae_1_step": 1177.0351274209374,
+        "val_mae_2_step": 1386.7426734338223,
+        "val_mae": 1299.3645292617869,
+        "aic_sum": 461138.10422358254
+      },
+      {
+        "order": [
+          2,
+          0,
+          0
+        ],
+        "seasonal_order": [
+          0,
+          1,
+          1,
+          7
+        ],
+        "val_mae_1_step": 1189.71883405097,
+        "val_mae_2_step": 1506.2772222084513,
+        "val_mae": 1374.3778938095008,
+        "aic_sum": 465822.21651120856
+      }
+    ]
+  },
+  "GBM": {
+    "chosen": {
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 100,
+      "max_iter": 2696,
+      "learning_rate": 0.1
+    },
+    "grid": [
+      {
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 20,
+        "n_iter": 2272,
+        "val_mae": 1200.5277607900834
+      },
+      {
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 100,
+        "n_iter": 2696,
+        "val_mae": 1188.9697747713149
+      },
+      {
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 20,
+        "n_iter": 2505,
+        "val_mae": 1213.278080782733
+      },
+      {
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 100,
+        "n_iter": 1652,
+        "val_mae": 1202.4046499857027
+      }
+    ]
+  },
+  "MLP": {
+    "chosen": {
+      "arch": {
+        "hidden": 256,
+        "depth": 1,
+        "dropout": 0.2
+      },
+      "epochs": 56
+    },
+    "grid": [
+      {
+        "hidden": 128,
+        "depth": 1,
+        "dropout": 0.2,
+        "epochs": 49,
+        "val_mae": 1016.3082419859735
+      },
+      {
+        "hidden": 256,
+        "depth": 1,
+        "dropout": 0.2,
+        "epochs": 56,
+        "val_mae": 995.9716257485563
+      },
+      {
+        "hidden": 512,
+        "depth": 1,
+        "dropout": 0.2,
+        "epochs": 57,
+        "val_mae": 999.9000936205695
+      },
+      {
+        "hidden": 128,
+        "depth": 2,
+        "dropout": 0.2,
+        "epochs": 72,
+        "val_mae": 1036.7353550917435
+      },
+      {
+        "hidden": 256,
+        "depth": 2,
+        "dropout": 0.2,
+        "epochs": 53,
+        "val_mae": 1036.120886509489
+      },
+      {
+        "hidden": 512,
+        "depth": 2,
+        "dropout": 0.2,
+        "epochs": 45,
+        "val_mae": 1022.9616307469296
+      }
+    ]
+  },
+  "LSTM": {
+    "chosen": {
+      "arch": {
+        "hidden": 32,
+        "head": 128,
+        "dropout": 0.1
+      },
+      "epochs": 62
+    },
+    "grid": [
+      {
+        "hidden": 32,
+        "head": 128,
+        "dropout": 0.1,
+        "epochs": 62,
+        "val_mae": 1007.9086912581453
+      },
+      {
+        "hidden": 64,
+        "head": 128,
+        "dropout": 0.1,
+        "epochs": 57,
+        "val_mae": 1013.9667976168575
+      }
+    ]
+  }
+}
